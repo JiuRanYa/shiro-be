@@ -7,8 +7,10 @@ services:
       - NODE_ENV=production
       - DB_HOST=mongo
       - REDIS_HOST=redis
-      - ALLOWED_ORIGINS=localhost:2323, jiuran.fun
-      - JWT_SECRET=YOUR_SUPER_SECURED_JWT_SECRET_STRING
+      - JWT_SECRET=tsy54843465484346
+      - ALLOWED_ORIGINS=https://shiro-one-snowy.vercel.app/, https://jiuran.fun, localhost
+      - ENCRYPT_ENABLE=false
+      - ENCRYPT_KEY=
     volumes:
       - ./data/mx-space:/root/.mx-space
     ports:
