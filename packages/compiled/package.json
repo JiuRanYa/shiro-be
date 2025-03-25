@@ -1,0 +1,19 @@
+{
+  "name": "@mx-space/compiled",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "exports": {
+    ".": "./dist/index.cjs",
+    "./zx-global": "./zx-global.cjs",
+    "./auth": "./dist/auth.cjs"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "better-auth": "1.1.21",
+    "nanoid": "5.0.9",
+    "zx": "7.2.3"
+  }
+}
